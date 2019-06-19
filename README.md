@@ -1,0 +1,1 @@
+# A react native app where you can add your favorite places
