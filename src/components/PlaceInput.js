@@ -10,7 +10,6 @@ export default class PlaceInput extends Component {
     this.setState({ placeName: value })
   };
 
-
   placeSubmitHandler = () => {
     // don't add empty values
     if (this.state.placeName.trim() === '') {
@@ -38,6 +37,7 @@ export default class PlaceInput extends Component {
     )
   }
 }
+
 
 const styles = StyleSheet.create({
   inputContainer: {
