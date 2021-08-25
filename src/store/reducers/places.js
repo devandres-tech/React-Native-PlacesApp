@@ -31,16 +31,16 @@ const reducer = (state = initialState, action) => {
     case SELECT_PLACE:
       return {
         ...state,
-         selectedPlace: state.places.find(place => {
+        selectedPlace: state.places.find(place => {
           return place.key === action.placeKey;
         })
       };
-      
-      case DESELECT_PLACE: 
-        return {
-          ...state,
-          selectedPlace: null
-        }
+
+    case DESELECT_PLACE:
+      return {
+        ...state,
+        selectedPlace: null
+      }
 
     default:
       return state;
